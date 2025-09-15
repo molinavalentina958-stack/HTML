@@ -40,9 +40,7 @@ header nav a:hover {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: 
-    linear-gradient(135deg, rgba(37,99,235,0.85), rgba(124,58,237,0.85)), 
-    url('img/hero_fondo.jpg');
+   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/712/985/small/abstract-health-medical-science-healthcare-icon-digital-technology-science-concept-modern-innovation-treatment-medicine-on-hi-tech-future-blue-background-for-wallpaper-template-web-design-vector.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -211,3 +209,79 @@ header nav a:hover {
   color: #374151; 
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+
+/* Footer */
+.footer {
+  position: relative;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/712/985/small/abstract-health-medical-science-healthcare-icon-digital-technology-science-concept-modern-innovation-treatment-medicine-on-hi-tech-future-blue-background-for-wallpaper-template-web-design-vector.jpg");  /* Azul como la imagen */
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: white;
+  font-size: 28px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+.menu-elem {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  opacity: 1.5;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
