@@ -1,0 +1,92 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/712/985/small/abstract-health-medical-science-healthcare-icon-digital-technology-science-concept-modern-innovation-treatment-medicine-on-hi-tech-future-blue-background-for-wallpaper-template-web-design-vector.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Encabezado */
+.contactos h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contactos p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Lista de contactos */
+.contacts {
+  list-style: none;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #3b82f6;
+  border-left: 8px solid #22c55e;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  font-size: 1.9rem;
+  margin-right: 14px;
+}
+
+.contact-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-left strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #1d4ed8;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #16a34a;
+}
+
+/* Botones teléfonos */
+.phone {
+  font-weight: bold;
+  color: #2563eb;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #e0f2fe;
+  transition: 0.2s ease, color 0.2s ease;
+}
+
+.phone:hover {
+  background: #22c55e;
+  color: #ffffff;
+}

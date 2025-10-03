@@ -1,0 +1,287 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #1E3A8A; /* azul fuerte */
+  color: white;
+  position: sticky; /* se queda arriba al hacer scroll */
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+header nav a {
+  margin: 0 15px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #FFD700; /* amarillo dorado al pasar */
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 3px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/712/985/small/abstract-health-medical-science-healthcare-icon-digital-technology-science-concept-modern-innovation-treatment-medicine-on-hi-tech-future-blue-background-for-wallpaper-template-web-design-vector.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 auto 20px;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600; 
+  color: white;
+  background: rgba(0,0,0,0.3);
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: inline-block;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn.azul {
+  background: #2563EB;
+}
+
+.btn.azul:hover {
+  background: #1E40AF; /* más oscuro al pasar */
+}
+
+.btn.morado {
+  background: #7C3AED;
+}
+
+.btn.morado:hover {
+  background: #5B21B6;
+}
+
+/* SECCIÓN EPS */
+.eps-section {
+  padding: 60px 40px;
+  background: #f9fafb; /* gris muy claro */
+  text-align: center;
+}
+
+.eps-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1E3A8A;
+}
+
+/* GRID */
+.eps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* TARJETAS */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* efecto flotante */
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #7C3AED; /* morado */
+  margin-bottom: 10px;
+}
+
+.card .precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2563EB;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+}
+
+/* BOTONES DE CADA CARD */
+.card .btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.card .btn.cotizar {
+  background: #2563EB;
+}
+
+.card .btn.cotizar:hover {
+  background: #1E40AF;
+}
+
+.card .btn.detalles {
+  background: #7C3AED;
+}
+
+.card .btn.detalles:hover {
+  background: #5B21B6;
+}
+
+.logo-eps {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Línea de afiliados + estrellas */
+.info {
+  margin: 8px 0 12px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #374151; 
+}
+
+.info .afiliados {
+  font-weight: 500;
+  color: #374151; 
+}
+
+.info .estrellas {
+  font-weight: bold;
+  color: #FFD700;
+  font-size: 1rem;
+}
+
+.info .porcentaje {
+  font-weight: 500;
+  color: #374151; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+
+/* Footer */
+.footer {
+  position: relative;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/712/985/small/abstract-health-medical-science-healthcare-icon-digital-technology-science-concept-modern-innovation-treatment-medicine-on-hi-tech-future-blue-background-for-wallpaper-template-web-design-vector.jpg");  /* Azul como la imagen */
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: white;
+  font-size: 28px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+.menu-elem {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  opacity: 1.5;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
